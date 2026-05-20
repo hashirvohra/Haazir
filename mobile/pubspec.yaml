@@ -1,0 +1,42 @@
+name: mobile
+description: Haazir - Agentic AI Service Orchestrator for Pakistan's Informal Economy.
+version: 1.0.0+1
+
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase Ecosystem
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.0
+  firebase_auth: ^5.3.0
+  firebase_messaging: ^15.1.0
+
+  # Network & Utilities
+  http: ^1.2.0
+  dio: ^5.7.0
+  provider: ^6.1.0
+
+  # UI and Styling
+  google_fonts: ^6.2.1
+  lottie: ^3.1.0
+  shimmer: ^3.0.0
+  google_maps_flutter: ^2.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Note: Noto Nastaliq Urdu is loaded via google_fonts, but custom assets can be added here if desired.
+  # assets:
+  #   - assets/images/
+

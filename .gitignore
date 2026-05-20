@@ -1,0 +1,78 @@
+# -------------------------------------------------------------
+# General OS / IDE / editor artefacts
+# -------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+*.log
+*.tmp
+
+# -------------------------------------------------------------
+# Python backend
+# -------------------------------------------------------------
+# Virtual‑environment folder (if you keep it inside the repo)
+backend/venv/
+# Byte‑compiled / optimized files
+__pycache__/
+*.py[cod]
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+# pip cache
+.pip/
+# dotenv files (keep your actual .env private)
+.env
+.env.*
+
+# -------------------------------------------------------------
+# Flutter / Dart / Android
+# -------------------------------------------------------------
+# Flutter generated files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+# iOS/Android specific generated folders
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.podspec
+android/.gradle/
+android/app/build/
+android/build/
+# Generated Android .class files, .apk, .aab, etc.
+*.apk
+*.aab
+*.aar
+*.class
+*.dex
+*.jar
+*.so
+*.jnilib
+*.keystore
+# Google services config (keep your real file private)
+google-services.json
+# Fastlane / signing artefacts
+fastlane/
+*.xcarchive
+*.xcworkspace
+*.xcconfig
+
+# -------------------------------------------------------------
+# Backend logs / temporary scratch files (Antigravity)
+# -------------------------------------------------------------
+# Antigravity system‑generated files
+.gemini/
+*.zip   # (the zip we generate for the trace logs – keep it out of source)
+
+# -------------------------------------------------------------
+# Miscellaneous
+# -------------------------------------------------------------
+# Ignore the GitHub Actions workflow artefacts (they are source, not build)
+.github/workflows/*.yml   # keep the .yml itself, but ignore any generated artefacts
