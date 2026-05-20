@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'services/agent_service.dart';
 import 'services/auth_service.dart';
@@ -11,8 +12,9 @@ import 'screens/provider_results_screen.dart';
 import 'screens/booking_confirmation_screen.dart';
 import 'screens/active_booking_tracker.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     ChangeNotifierProvider(
       create: (context) => AgentProvider(),
